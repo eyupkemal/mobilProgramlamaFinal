@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page2">
+    <ContentPage.Content>
+        <Grid Margin="20,35,20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.12*" />
+                <ColumnDefinition Width="0.18*" />
+                <ColumnDefinition Width="0.25*" />
+                <ColumnDefinition Width="0.15*" />
+                <ColumnDefinition Width="0.15*" />
+                <ColumnDefinition Width="0.15*" />
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <!-- 12 satır -->
+            </Grid.RowDefinitions>
+
+            <!-- S1 Sonuç -->
+            <Label Grid.Row="0"
+                   FontSize="Large" FontAttributes="Bold" VerticalOptions="Center"
+                   Text="C1:" />
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   x:Name="LabelCevap_1" VerticalOptions="Center"
+                   Text="Cevap Vermediniz" />
+            <Label Grid.Row="0"
+                   Grid.Column="4"
+                   x:Name="LabelCevap_1_Control" VerticalOptions="Center"
+                   Text="" />
+            <Label Grid.Row="0"
+                   Grid.Column="5"
+                   x:Name="LabelCevap_1_Puan" VerticalOptions="Center"
+                   Text="" />
+
+            <!-- S2 Sonuç -->
+            <Label Grid.Row="1"
+                   FontSize="Large" FontAttributes="Bold" VerticalOptions="Center"
+                   Text="C2:" />
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   x:Name="LabelCevap_2_1" VerticalOptions="Center"
+                   Text="" />
+            <Label Grid.Row="1"
+                   Grid.Column="2"
+                   x:Name="LabelCevap_2_2" VerticalOptions="Center"
+                   Text="" />
+            <Label Grid.Row="1"
+                   Grid.Column="3"
+                   x:Name="LabelCevap_2_3" VerticalOptions="Center"
+                   Text="" />
+            <Label Grid.Row="1"
+                   Grid.Column="4"
+                   x:Name="LabelCevap_2_4" VerticalOptions="Center"
+                   Text="" />
+            <Label Grid.Row="1"
+                   Grid.Column="5"
+                   x:Name="LabelCevap_2_Puan" VerticalOptions="Center"
+                   Text="" />
+
+            <!-- S3 Sonuç -->
+            <Label Grid.Row="2"
+                   FontSize="Large" FontAttributes="Bold" VerticalOptions="Center"
+                   Text="C3:" />
+            <Label Grid.Row="2"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   x:Name="LabelCevap_3" VerticalOptions="Center"
+                   Text="Cevap Vermediniz" />
+            <Label Grid.Row="2"
+                   Grid.Column="4"
+                   x:Name="LabelCevap_3_Control" VerticalOptions="Center"
+                   Text="" />
+            <Label Grid.Row="2"
+                   Grid.Column="5"
+                   x:Name="LabelCevap_3_Puan" VerticalOptions="Center"
+                   Text="" />
+
+            <!-- Boşluk-->
+            <Label Grid.Row="3"
+                   FontSize="Large" FontAttributes="Bold" VerticalOptions="Center"
+                   Text="" />
+
+            <!-- Sonuç -->
+            <Label Grid.Row="4"
+                   Grid.ColumnSpan="6"
+                   FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" x:Name="Label_ihtimal_Rakamla" 
+                   Text="" />
+
+            <Label Grid.Row="5"
+                   Grid.ColumnSpan="6"
+                   FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" x:Name="Label_ihtimal_Yazıyla" 
+                   Text="" />
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

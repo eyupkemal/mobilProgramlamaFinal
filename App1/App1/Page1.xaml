@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page1">
+    <ContentPage.Content>
+        <Grid Margin="20,35,20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.10*" />
+                <ColumnDefinition Width="0.40*" />
+                <ColumnDefinition Width="0.10*" />
+                <ColumnDefinition Width="0.40*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <!-- 12 satır -->
+            </Grid.RowDefinitions>
+
+
+            <!-- Soru 1 Radio Buton ile ilgili -->
+            <Label Grid.Row="0"
+                   Grid.ColumnSpan="4"
+                   FontSize="Large" FontAttributes="Bold" TextColor="Green"
+            Text="Soru 1- Dersin Adı ve Kodu nedir?" />
+
+            <RadioButton Grid.Row="1" Grid.ColumnSpan="4" Content="SBT233-Bilgisayar Bakımı ve Onarımı"
+                     CheckedChanged="Soru_1_RadioButtonCheckedChanged" />
+            <RadioButton Grid.Row="2" Grid.ColumnSpan="4" Content="SBT251-Mobil Programlama"
+                     CheckedChanged="Soru_1_RadioButtonCheckedChanged" />
+            <RadioButton Grid.Row="3" Grid.ColumnSpan="4" Content="SBT220-Nesne Tabanlı Programlama"
+                     CheckedChanged="Soru_1_RadioButtonCheckedChanged" />
+            <RadioButton Grid.Row="4" Grid.ColumnSpan="4" Content="SBT105-Algoritma"
+                     CheckedChanged="Soru_1_RadioButtonCheckedChanged" />
+            <Label Grid.Row="5" Grid.ColumnSpan="4" 
+                    Text=" " />
+
+            <!-- Soru 2 Checkbox Buton ile ilgili -->
+            <Label Grid.Row="6" 
+                   Grid.ColumnSpan="4" 
+                   FontSize="Large" FontAttributes="Bold" TextColor="Green"
+                   Text="Soru 2- Ders hakkında görüşünüzü belirtiniz. (Birden fazla seçenek işaretleyebilirsiniz)" />
+
+            <CheckBox Grid.Row="7" Grid.Column="0"  VerticalOptions="Center" x:Name="CheckBox_1" CheckedChanged="CheckBoxChanged_1"/>
+            <Label Grid.Row="7" Grid.Column="1"  VerticalOptions="Center" Text="Anlamıyorum" x:Name="Label_Anlamıyorum"/>
+            <CheckBox Grid.Row="7" Grid.Column="2"  VerticalOptions="Center" x:Name="CheckBox_2" CheckedChanged="CheckBoxChanged_2"/>
+            <Label Grid.Row="7" Grid.Column="3"  VerticalOptions="Center" Text="Çok Şey Öğrendim" x:Name="Label_Çok_Şey_Öğrendim"/>
+
+            <CheckBox Grid.Row="8" Grid.Column="0"  VerticalOptions="Center" x:Name="CheckBox_3" CheckedChanged="CheckBoxChanged_3"/>
+            <Label Grid.Row="8" Grid.Column="1"  VerticalOptions="Center" Text="Kolay" x:Name="Label_Kolay"/>
+            <CheckBox Grid.Row="8" Grid.Column="2"  VerticalOptions="Center" x:Name="CheckBox_4" CheckedChanged="CheckBoxChanged_4"/>
+            <Label Grid.Row="8" Grid.Column="3"  VerticalOptions="Center" Text="Zor" x:Name="Label_Zor"/>
+
+            <Label Grid.Row="9" Grid.ColumnSpan="4" Text=" " />
+
+            <!-- Soru 3 Checkbox Buton ile ilgili -->
+            <Label Grid.Row="10" 
+                   Grid.ColumnSpan="4" 
+                   FontSize="Large" FontAttributes="Bold" TextColor="Green"
+                   Text="Soru 3- Verilen harflerle anlamlı bir kelime oluşturunuz" />
+            <Label Grid.Row="11" 
+                   Grid.ColumnSpan="4" VerticalOptions="Center" HorizontalOptions ="Center"
+                   FontSize="Large" TextDecorations ="Underline" TextColor="Orange" 
+                   Text="o   l   i   m   b" />
+
+            <Entry Grid.Row="12" TextChanged="Entry_TextChanged"
+                   Grid.ColumnSpan="4" 
+                   x:Name="entry" Text="Kelimeyi buraya yazınız" />
+
+            <!-- Sorular cevaplandıktan sonra çıkacak -->
+            <Label Grid.Row="13" 
+                   Grid.ColumnSpan="4" VerticalOptions="End" HorizontalOptions ="Center" FontSize="Large"
+                   Text="----------------------------------" />
+            <ScrollView Grid.Row="14"
+                  Grid.ColumnSpan="4">
+                <Label x:Name="LabelTestiTamamladınız"
+                   FontSize="Large" VerticalOptions="End" HorizontalOptions ="Center"
+                   Text="Testi Tamamlayınız..." />
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
